@@ -1,0 +1,23 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Car_Prices](
+	[year] [smallint] NOT NULL,
+	[make] [nvarchar](50) NULL,
+	[model] [nvarchar](50) NULL,
+	[trim] [nvarchar](50) NULL,
+	[body] [nvarchar](50) NULL,
+	[transmission] [nvarchar](50) NULL,
+	[vin] [nvarchar](50) NULL,
+	[state] [nvarchar](50) NOT NULL,
+	[condition] [tinyint] NULL,
+	[odometer] [int] NULL,
+	[color] [nvarchar](50) NULL,
+	[interior] [nvarchar](50) NULL,
+	[seller] [nvarchar](100) NOT NULL,
+	[mmr] [int] NULL,
+	[sellingprice] [int] NULL,
+	[saledate] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
